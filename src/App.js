@@ -13,6 +13,7 @@ class App extends Component {
         {
           Array.from(word).map((c, i) => <CharacterCard value={c} key={i} />)
         }
+        555
       </div>
     );
   }
