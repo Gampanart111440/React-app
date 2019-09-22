@@ -57,6 +57,7 @@ export default class WordCard extends Component {
                     )}
                 </div>
                 {this.state.name.join("") === this.state.word ? <div> <h1>ถูกต้องครับพี่น้อง</h1></div> : ''}
+                {this.state.name.join("") !== this.state.word && this.state.attempt === 3 ? <div> <h1>ผิดนะเอาใหม่ได้เสมอนะ</h1></div> : ''}
             </div>
         );
     }
