@@ -1,14 +1,63 @@
+html {
+  text-align: center;
+}
+body{
+  background-image: url("./bg.jpg");
+  background-size: cover;
+}
 .activeCard {
-  color: red;
-  background: pink;
+  color:#00FF00;
+  background: #FFFF00;
  }
 .card {
   display: inline-block;
   text-align: center;
-  width: 3em;
-  font-size: 2em;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 6em;
+  font-size: 4em;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
   margin: 1em;
   user-select: none;
  }
- 
+ .card1 {
+  display: inline-block;
+  text-align: center;
+  width: 6em;
+  font-size: 4em;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+  background-color:#ff8000;
+  margin: 1em;
+  user-select: none;
+ }
+ .card2 {
+  display: inline-block;
+  text-align: center;
+  width: 6em;
+  font-size: 4em;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+  background-color:#59b40e;
+  padding: 20px;
+  margin: 1em;
+  user-select: none;
+ }
+ .card3 {
+  display: inline-block;
+  text-align: center;
+  width: 6em;
+  font-size: 4em;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+  background-color:#F0F;
+  padding: 20px;
+  margin: 1em;
+  user-select: none;
+ }
+ .card4 {
+  display: inline-block;
+  text-align: center;
+  width: 6em;
+  font-size: 4em;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+  background-color:#F00;
+  padding: 20px;
+  margin: 1em;
+  user-select: none;
+ }

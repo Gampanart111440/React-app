@@ -44,6 +44,7 @@ export default class WordCard extends Component {
 
         return (
             <div>
+                <h1 className= "card4">Game</h1>
                 <div>
                     {Array.from(this.state.chars).map((c, i) => <CharacterCard value={c} key={i} attempt={this.state.attempt}
                         activationHandler={this.activationHandler} />
@@ -51,13 +52,13 @@ export default class WordCard extends Component {
                 </div>
                 <div>
                     {this.state.name.map((word, i) =>
-                        <div key={i} className="card">
+                        <div key={i} className= "card1">
                             {word}
                         </div>
                     )}
                 </div>
-                {this.state.name.join("") === this.state.word ? <div> <h1>ถูกต้องครับพี่น้อง</h1></div> : ''}
-                {this.state.name.join("") !== this.state.word && this.state.attempt === 3 ? <div> <h1>ผิดนะเอาใหม่ได้เสมอนะ</h1></div> : ''}
+                {this.state.name.join("") === this.state.word ? <div> <h1 className= "card2">ถูกต้องแล้วพี่น้อง</h1></div> : ''}
+                {this.state.name.join("") !== this.state.word && this.state.attempt === 3 ? <div> <h1 className= "card2">ผิดนะเอาใหม่ได้เสมอนะ</h1></div> : ''}
             </div>
         );
     }
