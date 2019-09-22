@@ -39,6 +39,7 @@ export default class WordCard extends Component {
         console.log("Char: ", this.state.chars);
         console.log("Guess: ", this.state.guess);
         console.log("Guess: ", this.state.guess.join(""));
+        console.log("Attemp: ", this.state.attempt);
         console.log("---------------------------------------");
 
         return (
@@ -49,20 +50,13 @@ export default class WordCard extends Component {
                     )}
                 </div>
                 <div>
-                    {this.state.guess.map((word, i) =>
+                    {this.state.name.map((word, i) =>
                         <div key={i} className="card">
                             {word}
                         </div>
                     )}
                 </div>
-                {/* <div>
-                    {Array.from(this.state.guess).map((c, i) => <CharacterCard value={c} key={i} attempt={this.state.attempt}
-                        activationHandler={this.activationHandler} />
-                    )}
-                </div> */}
-                <div>
-
-                </div>
+                {this.state.name.join("") === this.state.word ? <div> <h1>ถูกต้องครับพี่น้อง</h1></div> : ''}
             </div>
         );
     }
