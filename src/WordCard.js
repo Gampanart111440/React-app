@@ -10,7 +10,8 @@ const prepareStateFromWord = (given_word) => {
         chars,
         attempt: 1,
         guess: [],
-        completed: false
+        completed: false,
+        name: []
     }
 }
 export default class WordCard extends Component {
@@ -20,6 +21,9 @@ export default class WordCard extends Component {
     }
     activationHandler = (c) => {
         let guess = [...this.state.guess, c]
+        this.setState({ name: [...this.state.name, c] })
+        console.log("Name", this.state.name);
+
         this.setState({ guess })
         if (guess.length === this.state.chars.length) {
             if (guess.join('').toString() === this.state.word) {
